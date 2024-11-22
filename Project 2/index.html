@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oxygen:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <title>Dashboard</title>
+        <!-- css code -->
+        <link rel="stylesheet" href="./src/style/global.css" />
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="title">Smart <span>Farming</span></h1>
+            <p class="author">By <span>@yasaa.7z</span></p>
+        </div>
+        <div class="status-sensor" id="bg-sensor">
+            <p>
+                <span id="status">--</span>
+                <span id="status-dot" class="dot"></span>
+            </p>
+        </div>
+        <div class="container">
+            <div class="sensor-box">
+                <h2>Humidity</h2>
+                <p><span id="humidity">--</span> %</p>
+            </div>
+            <div class="sensor-box">
+                <h2>Temperature</h2>
+                <p><span id="temperature">--</span> °C<br></p>
+            </div>
+            <div class="sensor-box">
+                <h2>Soil</h2>
+                <p><span id="soil">--</span> %<br></p>
+            </div>
+            <div class="sensor-box">
+                <h2>Wind</h2>
+                <p><span id="wind">--</span> m/s<br></p>
+            </div>
+        </div>
+        <div class="button-container">
+            <div class="button-wrapper">
+                <button class="grow-lamp">GROW LED</button>
+            </div>
+            <div class="button-wrapper">
+                <button class="pump">PUMP</button>
+            </div>
+        </div>
+        <script src="./src/js/main.js"></script>
+    </body>
+</html>
